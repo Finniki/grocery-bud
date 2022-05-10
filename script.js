@@ -10,7 +10,7 @@ btnAdd.addEventListener("click", function () {
   if (newTask.value === "") {
     inputPrompt.classList.add("prompt");
     inputPrompt.textContent = `You have not entered a new task`;
-    setInterval(function () {
+    setTimeout(function () {
       inputPrompt.textContent = "";
     }, 2000);
   } else {
